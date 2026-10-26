@@ -1,18 +1,3 @@
-# Non-Contact-Multi-Color-3D-Printing-Proposal---GÖkhan-Pekcan
-# 📜 Open-Source Technical Proposal: Non-Contact Multi-Color FDM Printing via Surface Texturing & Dual-Jet Deposition
-
-**Inventor / Author:** Gökhan Pekcan  
-**Contact:** pekcan4@hotmail.com / jebelwot@gmail.com  
-**Publication Date:** 26 October 2026  
-**License:** MIT License
-
----
-
-## 1. Executive Summary
-Current multi-color FDM solutions rely heavily on tool-changing or filament-retraction mechanisms (e.g., Bambu AMS, Prusa MMU), leading to high purge waste, slow print times, and mechanical complexity. 
-
-This proposal presents a **non-contact, low-cost, multi-color post-deposition system** designed by Gökhan Pekcan that eliminates purge waste entirely. By combining algorithmic surface micro-texturing (Slicer-level) with a cold-zone dual-jet delivery system (Pigment + Stabilizer), any standard single-extruder FDM printer can achieve multi-color output.
-
----
-
-## 2. System Architecture & 3-Step Workflow
+ Open-Source Technical Proposal: Non-Contact Multi-Color FDM Printing via Surface Texturing & Dual-Jet DepositionInventor / Author: Gökhan PekcanContact: pekcan4@hotmail.com / jebelwot@gmail.comPublication Date: 26 October 2026License: MIT License1. Executive SummaryCurrent multi-color FDM solutions rely heavily on tool-changing or filament-retraction mechanisms (e.g., Bambu AMS, Prusa MMU), leading to high purge waste, slow print times, and mechanical complexity.This proposal presents a non-contact, low-cost, multi-color post-deposition system designed by Gökhan Pekcan that eliminates purge waste entirely. By combining algorithmic surface micro-texturing (Slicer-level) with a cold-zone dual-jet delivery system (Pigment + Stabilizer), any standard single-extruder FDM printer can achieve multi-color output.2. System Architecture & 3-Step Workflow[ Step 1: Micro-Texturing ]  --->  [ Step 2: Pigment Jetting ]  --->  [ Step 3: Liquid Sealing ]
+ (Slicer Fuzzy Skin / Porous)        (Cold-Zone Jet / Capillary)        (Non-Contact Stabilizer)
+Step 1: Algorithmic Surface Texturing (No Laser Required)Mechanism: Rather than using complex laser ablation, the slicer modifies the outer perimeter paths using micro-vibrations (customized Fuzzy Skin / under-extrusion algorithms).Objective: Creates micro-porous textures and capillary channels on the fresh plastic wall to act as a mechanical receiver for pigments.Step 2: Cold-Zone Pigment Jetting (Non-Contact)Thermal Isolation: Pigment reservoirs and micro-jet valves are placed in the Cold Zone behind the heat barrier to prevent thermal degradation and nozzle clogging.Deposition: High-speed micro-jets propel the liquid pigment (or volatile solvent-based ink) directly onto the targeted micro-porous surface.Capillary Absorption: The porous plastic absorbs the pigment instantly via capillary action. Heat from the printed wall triggers rapid solvent evaporation.Step 3: Non-Contact Liquid Stabilization (Sealing)Mechanism: Eliminates mechanical ironing tools to avoid print deformation and friction.Application: A secondary micro-jet deposits an ultra-thin, fast-curing transparent stabilizer (acrylic/polyurethane varnish layer).Result: Locks the pigment particles permanently inside the micro-pores, leaving a smooth (glossy, satin, or matte) external surface.3. Key Advantages Over Existing SystemsFeatureTraditional Systems (AMS / MMU)This Proposal (Gökhan Pekcan)Purge WasteExtremely High (Purge Towers)Zero (0%)Toolhead WeightHeavy (Multiple motors/extruders)Lightweight (2x Micro-Jet Valves)Print SpeedSlow (Constant retract/swap)Fast (Continuous extrusion path)Mechanical WearHigh (Filament grinding)Zero Contact (Fluid Dynamics)Cost & RetrofitHigh ($300 - $1000+)Low (Add-on module for standard printers)4. Call for Community Collaboration (Open Roadmap)We encourage developers, makers, and researchers to experiment with:Slicer Plugins: Fine-tuning Fuzzy Skin parameters for optimal capillary pigment absorption.Pigment Chemistry: Testing high-volatility solvent inks vs. micro-pigment suspensions on hot PLA/PETG surfaces.Jet Integration: Mounting micro-piezo or solenoid valves onto open-source printheads (e.g., Voron Stealthburner).
